@@ -1,0 +1,103 @@
+.login{
+    width: 100%;
+    height: 100%;
+    background-image: url(https://login.cityu.edu.mo/cas/images/background.png);
+    background-color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.login .loginForm{
+    position: absolute;
+      top: 33%;
+      left: 44%;
+      background-color: white;
+      border-radius: 8px; 
+      padding: 20px 0px 20px 20px;
+}
+.login .loginForm .inglog {
+    height: 95px;
+    width: 308px;
+    background: url('https://login.cityu.edu.mo/cas/images/logo.png') no-repeat center;
+    background-size: contain;
+  }
+.login .loginForm .lable {
+    margin: 0;
+    display: block;
+    color: #777777;
+  }
+.login .loginForm .lobtn {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 308px;
+    line-height: 42px;
+    margin: 0;
+    border: 1px solid #18a5a5;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    background-color: #1bb6b7;
+    font-size: 14px;
+    color: white;
+    cursor: pointer;
+  }
+.loginBox{
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 30px 0;
+  }
+.loginBox .requery{
+    font-size: 14px;
+    color: red;
+    display: none;
+    margin: 0;
+  } 
+.loginBox .line{
+    color: #777777;
+    font-size: 14px;
+    margin: 16 0 0 0;
+  }
+.loginBox input{
+    width: 310px;
+    height: 42px;
+    font-size: 14px;
+    background-color: #F3F3F3;
+    border-color: #F3F3F3;
+    padding: 6px;
+    border-radius: 3px;
+    border: none;
+    outline: none;
+  }
+  .loginBox input:focus{
+    background-color: white;
+    border: 1px solid #1BB6B7;
+    border-color: #1BB6B7;
+  }
+  body{margin: 0;}
+  
+  .after_button {
+  color:red;
+  font-size: 15px;
+  background-color:white;
+  border: none;
+  cursor: pointer;
+  border-radius: 3px;
+  }
+button{
+  height: 5%;
+  width: 5%;
+  height:20px;
+  width:20px;
+  border: none;
+  padding: 0;
+  top: 5px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-color:white;
+  background-image: url(https://pngimg.com/uploads/question_mark/question_mark_PNG115.png)
+}
+.line1{margin: 0;}

@@ -1,0 +1,395 @@
+#box {
+    height: auto;
+    width: 100%;
+    background-color: #fff;
+  }
+#box #header {
+    max-width: 1600px;
+    margin: 0 auto;
+    margin-top: 40px;
+  }
+#box #header .header {
+    width: 100%;
+    display: flex;
+    /* 将border和padding数值包含在width和height之内 */
+    box-sizing: border-box;
+    padding: 0 80px;
+    height: 100px;
+  }
+#box #header .header .logo {
+    width: 330px;
+  }
+#box #header .header .logo img {
+    width: 330px;
+    height: 100px;
+  }
+#box #header .header .user {
+    flex: 1;
+    text-align: right;
+  }
+#box #header .header .user .top {
+    text-align: right;
+    display: flex;
+    /* 對齊方式 */
+    justify-content: flex-end;
+  }
+#box #header .header .user .top .search {
+    display: inline-block;
+    width: 230px;
+    /* 保持在文档流中的位置 不受浮動影響*/
+    position: relative;
+    background-color: #fff;
+   
+    border: none;
+    height: 30px;
+  }
+#box #header .header .user .top .search input {
+    border: none;
+    width: 100%;
+    height: 28px;
+    outline: none;
+    background: #f2f2f2;
+     /* 圓框 */
+    border-radius: 2px;
+  }
+#box #header .header .user .top .search .inputVielk {
+    display: none;
+  }
+#box #header .header .user .top .search img {
+    position: absolute;
+    top: 20%;
+    right: 10px;
+    width: 18px;
+    height: 18px;
+    /* 光標變化 */
+    cursor: pointer;
+  }
+#box #header .header .user .top .language {
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+    color: #008264;
+    line-height: 30px;
+  }
+  #box #header .header .user .top .language a{
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+    color: #008264;
+    line-height: 30px; }
+#box #header .header .user .top .language img {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+  }
+  #box #header .header .user .filelsiy {
+    margin-top: 24px;
+    /* 弹性盒子，横向排布 */
+    display: flex;
+    /* 向下对齐 */
+    justify-content: flex-end;
+    color: #484848;
+    cursor: pointer;
+  }
+  #box #header .header .user .filelsiy li {
+    min-width: auto;
+    height: 30px;
+    line-height: 30px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    padding: 0 15px;
+    /* 框变竖线 */
+    border-right: 1px solid #cccccc;
+    border-radius: 0px;
+    position: relative;
+  }
+  #box #header .header .user .filelsiy li span:hover {
+    color: #008264;
+    cursor: pointer;
+  }
+  #box #header .header .user .filelsiy li .active:hover a {
+    color: #484848;
+  }
+  #box #header .header .user .filelsiy li .active {
+    background-color: #ff6369;
+   
+  }
+  #box #header .header .user .filelsiy li .active a {
+    color: #fff;
+  }
+  #box #header .header .user .filelsiy li a {
+    color: #484848;
+    border: 0;
+    text-decoration: none;
+  }
+  #box #header .header .user .filelsiy li a:hover {
+    color: #008264;
+  }
+  #box #header .header .user .filelsiy li ul {
+    position: absolute;
+    display: none;
+    z-index: 15;
+    left: 50%;
+    margin-left: -70px;
+    min-width: 140px;
+    white-space: nowrap;
+    margin-top: 0px;
+    padding: 10px;
+    box-shadow: 0 0 5px 2px #ccc;
+    background: #fff;
+  }
+  #box #header .header .user .filelsiy li ul li {
+    text-align: center !important;
+    border: none !important;
+  }
+  #box #header .header .user .filelsiy :nth-last-child(1) {
+    border-right: none;
+  }
+  #box #header .header .user .filelsiy :nth-last-child(1) span {
+    padding: 5px;
+    border-radius: 4px;
+  }
+  #box #header .header .user .filelsiy :nth-last-child(1) span:hover {
+    color: #484848;
+    cursor: pointer;
+  }
+  #box #header .header .user .filelsiy :nth-last-child(1) .active:hover {
+    background-color: #ff6369;
+    color: #fff; 
+   } 
+  #box #header .header .user .filelsiy li:hover ul {
+    display: block;
+  }
+  #box #nav {
+    height: 55px;
+    background: #008264;
+    margin-top: 22px;
+    width: 100%;
+  }
+  #box #nav .navall {
+    height: 100%;
+    text-align: center;
+  }
+  #box #nav .navall #navList {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  #box #nav .navall #navList .copus {
+    height: 100%;
+    width: auto;
+    min-width: auto;
+    padding: 0 9px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    letter-spacing: 2px;
+    position: relative;
+  }
+  #box #nav .navall #navList .copus a {
+    /* 文本不会换行 */
+    white-space: nowrap;
+    font-size: 17px;
+    color: #fff;
+    border: 0;
+    /* 刪除下劃綫 */
+    text-decoration: none;
+    padding: 0 10px;
+  }
+  #box #nav .navall #navList .copus .sun-nav1 {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: -25%;
+    /* 数值大的在上面 */
+    z-index: 10;
+    min-width: 140px;
+    white-space: nowrap;
+    margin-top: 0px;
+    padding: 10px 0;
+    /* 盒子阴影 */
+    box-shadow: 0 0 5px 2px #ccc;
+    background: #fff;
+  }
+  #box #nav .navall #navList .copus .sun-nav1 a {
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: #484848;
+    padding: 0 20px;
+  }
+  #box #nav .navall #navList .copus .sun-nav1 a:hover {
+    color: #006d54;
+  }
+  #box #nav .navall #navList .copus .sun-nav1 li {
+    line-height: 40px;
+    position: relative;
+  }
+  #box #nav .navall #navList .copus .sun-nav1 li .sun-nav2 {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    z-index: 10;
+    min-width: 140px;
+    white-space: nowrap;
+    margin-top: 0px;
+    padding: 10px 0;
+    box-shadow: 0 0 5px 2px #ccc;
+    background: #fff;
+  }
+  #box #nav .navall #navList .copus .sun-nav1 li .sun-nav2 li {
+    line-height: 40px;
+    position: relative;
+  }
+  #box #nav .navall #navList .copus .sun-nav1 li .sun-nav2 li .sun-nav3 {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    z-index: 9;
+    min-width: 140px;
+    white-space: nowrap;
+    margin-top: 0px;
+    padding: 10px 0;
+    box-shadow: 0 0 5px 2px #ccc;
+    background: #fff;
+  }
+  #box #nav .navall #navList .copus:hover {
+    background-color: #006d54;
+  }
+  #box #nav .navall #navList .copus:hover .sun-nav1 {
+    display: block;
+  }
+  #box #nav .navall #navList .copus:hover .sun-nav1 li:hover .sun-nav2 {
+    display: block;
+  }
+  #box #nav .navall #navList .copus:hover .sun-nav1 li:hover .sun-nav2 li:hover .sun-nav3 {
+    display: block;
+  }
+
+ 
+  
+
+
+
+
+/* 轮播图 */
+  body{
+    margin: 0;
+    padding: 0px;
+}
+#carousel{
+    margin: auto; /* 居中 */
+    width: 100%; /* 设置宽度 */
+    /* height: 800px; */
+    position: relative; /* 相对定位 */
+    overflow: hidden; /* 超出隐藏 */
+}
+#carousel img{
+    position: absolute; /* 绝对定位 使图片堆叠 */
+    width: 100%; /* 设定大小 按比例缩放 */
+    height: 100%;
+    transition: all .6s; /* 动画 */
+    opacity: 0; /* 隐藏 */
+}
+.imgActive{
+    opacity: 1 !important; /* 显示图片 最高优先级 */
+}
+
+/* 控制按钮的样式 */
+#leftArrow,
+#rightArrow{
+    position: absolute;
+    left: 5px;
+    top: 43%;
+    width: 30px;
+    height: 100px;
+    /* background-color: nome; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.7;
+    color: white;
+    font-size: 50px;
+    cursor: pointer;
+    z-index: 1000;
+}
+#rightArrow{
+    left: auto;
+    right: 5px;
+}
+#sliderBtn{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    z-index: 1000;
+}
+.unitBtn{
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 6px;
+    cursor: pointer;
+}
+.btnActive{
+    background-color: #258576;
+}
+  
+  }
+  body {
+    width: 100%;
+    height: 100%;
+  }
+ 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box; 
+    font-size: 16px;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
